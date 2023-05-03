@@ -1,0 +1,50 @@
+.frame1 {
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  position: relative;
+  width: 390px;
+  height: 844px;
+
+  background: #ffffff;
+}
+.banner {
+  width: 100%;
+  height: 80px;
+
+  background: #2d3192;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.content {
+  width: 100%;
+  height: 100%;
+
+  background: #b1b3e7;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 1;
+}
+.footer {
+  width: 100%;
+  height: 80px;
+
+  background: #2d3192;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+}
