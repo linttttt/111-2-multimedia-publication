@@ -1,0 +1,694 @@
+/* postcard */
+.postcard {
+
+    position: relative;
+    width: 320px;
+    height: 480px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
+}
+
+/* backgrpund */
+.backgrpund {
+
+    position: absolute;
+    width: 320px;
+    height: 480px;
+    left: 0px;
+    top: 0px;
+
+
+
+}
+
+/* frame 3
+.frame 3 {
+
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    background: url(frame.jpg);
+
+
+} */
+
+/* cardInfo */
+.cardInfo {
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px 0px;
+
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 5.83%;
+    bottom: 5.83%;
+
+    background: #FFFFFF;
+
+
+}
+
+/* date */
+.date {
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+
+    position: relative;
+    width: 150px;
+    height: 16px;
+
+
+
+}
+
+/* year */
+.year {
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+
+    width: 70px;
+    height: 16px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+
+}
+
+/* y1 */
+.y1 {
+
+    width: 10px;
+    height: 22px;
+
+    font-family: 'Comic Sans MS';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #000000;
+
+    border: 1px solid #000000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+
+}
+
+/* y2 */
+.y2 {
+
+    width: 10px;
+    height: 22px;
+
+    font-family: 'Comic Sans MS';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #000000;
+
+    border: 1px solid #000000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+
+}
+
+/* y3 */
+.y3 {
+
+    width: 10px;
+    height: 22px;
+
+    font-family: 'Comic Sans MS';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #000000;
+
+    border: 1px solid #000000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+
+
+}
+
+/* y4 */
+.y4 {
+
+    width: 10px;
+    height: 22px;
+
+    font-family: 'Comic Sans MS';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #000000;
+
+    border: 1px solid #000000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+
+
+}
+
+/* month */
+.month {
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+
+    width: 30px;
+    height: 16px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+
+}
+
+/* m1 */
+.m1 {
+
+    width: 10px;
+    height: 22px;
+
+    font-family: 'Comic Sans MS';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #000000;
+
+    border: 1px solid #000000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+
+}
+
+/* m2 */
+.m2 {
+
+    width: 10px;
+    height: 22px;
+
+    font-family: 'Comic Sans MS';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #000000;
+
+    border: 1px solid #000000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+
+}
+
+/* day */
+.day {
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+
+    width: 30px;
+    height: 16px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+
+
+}
+
+/* d1 */
+.d1 {
+
+    width: 10px;
+    height: 22px;
+
+    font-family: 'Comic Sans MS';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #000000;
+
+    border: 1px solid #000000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+
+}
+
+/* d2 */
+.d2 {
+
+    width: 10px;
+    height: 22px;
+
+    font-family: 'Comic Sans MS';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #000000;
+
+    border: 1px solid #000000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* top */
+.top {
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+
+    width: 280px;
+    height: 185px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+
+}
+
+/* top-info */
+.top-info {
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+
+    width: 280px;
+    height: 171px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+
+}
+
+/* stamp */
+.stamp {
+    position: relative;
+    width: 150px;
+    height: 150px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+
+}
+
+/* stamp-backgraund */
+.stamp-backgraund {
+
+    position: absolute;
+    left: 0%;
+    right: 17.55%;
+    top: 0%;
+    bottom: 4.76%;
+
+
+
+}
+
+/* vector
+.vector {
+
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    background: #FFFFFF;
+    border: 1px solid #D4D4D4;
+
+
+} */
+
+/* stamp-image */
+.stamp-image {
+
+    position: absolute;
+    left: 14.16%;
+    right: 31.36%;
+    top: 13.81%;
+    bottom: 19.16%;
+
+    /* background: url(NTPUstone.jpg); */
+
+
+}
+
+/* sign-info */
+.sign-info {
+
+    position: absolute;
+    left: 60%;
+    right: 0%;
+    top: 60.33%;
+    bottom: -0.33%;
+
+
+
+}
+
+/* sign-shape */
+.sign-shape {
+
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+
+
+}
+
+/* vector2 */
+.vector2 {
+
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    border: 3px solid #D40000;
+
+
+}
+
+/* sign-text */
+.sign-text {
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 7.5%;
+    bottom: 7.5%;
+
+
+
+}
+
+/* sign-major */
+.sign-major {
+
+    width: 24px;
+    height: 17px;
+
+    font-family: 'Comic Sans MS';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    /* identical to box height */
+
+    color: #D50000;
+
+    border: 0.5px solid #D50000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+
+}
+
+/* sign-grade */
+.sign-grade {
+
+    width: 12px;
+    height: 10px;
+
+    font-family: 'Comic Sans MS';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 10px;
+    /* identical to box height, or 83% */
+
+    color: #D50000;
+
+    border: 0.5px solid #D50000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+
+}
+
+/* sender */
+.sender {
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    width: 120px;
+    height: 171px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 1;
+
+
+}
+
+/* sender-name */
+.sender-name {
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+
+    width: 120px;
+    height: 42px;
+
+    border-bottom: 1px solid #000000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+
+}
+
+/* name */
+.name {
+
+    width: 90px;
+    height: 42px;
+
+    font-family: 'Comic Sans MS';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+    /* identical to box height */
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+
+}
+
+/* sender-major */
+.sender-major {
+
+    width: 120px;
+    height: 28px;
+
+    font-family: 'Comic Sans MS';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height */
+    text-align: center;
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+
+}
+
+/* content */
+.content {
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 10px 20px;
+
+    width: 280px;
+    height: 229px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 1;
+
+
+}
+
+/* content-text */
+.content-text {
+
+    width: 260px;
+    height: 199px;
+
+    font-family: 'Comic Sans MS';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+}

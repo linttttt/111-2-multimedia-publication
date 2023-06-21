@@ -5,16 +5,17 @@ import './App2.css'
 import PlayIcon from '@mui/icons-material/PlayArrow';
 import NextIcon from '@mui/icons-material/FastForward';
 import PreviousIcon from '@mui/icons-material/FastRewind';
-import Card from '../components/Card';
+// import Card from '../components/Card';
 import { IconButton } from '@mui/material';
 import appConfig from "../appConfig.json"
-import dataJson from "./data2.json"
+import dataJson from "./data.json"
 import Image from "mui-image"
-import { Postcard } from '../components/Postcard';
+// import { Postcard } from '../components/Postcard';
+import ImageAvatars from '../components/Avatar';
+import Finalcard from '../components/Finalcard';
 
 
 export default function App() {
-
     console.log(dataJson)
 
     const users = convertUsersToArrayOfObject(dataJson)
@@ -24,14 +25,14 @@ export default function App() {
     const cards = users.map((e, i) => {
         return (
             // <Card user={e} key={i} />
-            <Postcard user={e} key={i} />
+            <Finalcard user={e} key={i} />
         )
     })
 
     return (
         <div className="App">
             <Main>
-                {cards}
+                <ImageAvatars/>
             </Main>
             <NavbarCustom>
                 <NavbarItem>
@@ -55,6 +56,48 @@ export default function App() {
         </div>
     )
 }
+// export default function App() {
+
+//     console.log(dataJson)
+
+//     const users = convertUsersToArrayOfObject(dataJson)
+
+//     console.log(users)
+
+//     const cards = users.map((e, i) => {
+//         return (
+//             // <Card user={e} key={i} />
+//             <Postcard user={e} key={i} />
+//         )
+//     })
+
+//     return (
+//         <div className="App">
+//             <Main>
+//                 {cards}
+//             </Main>
+//             <NavbarCustom>
+//                 <NavbarItem>
+//                     <IconButton>
+//                         <PreviousIcon />
+//                     </IconButton>
+//                 </NavbarItem>
+//                 <NavbarItem>
+//                     {/* <PlayIcon/> */}
+//                     <IconButton>
+//                         <PlayIcon />
+//                     </IconButton>
+//                 </NavbarItem>
+//                 <NavbarItem>
+//                     <IconButton>
+//                         <NextIcon />
+//                     </IconButton>
+//                 </NavbarItem>
+//             </NavbarCustom>
+
+//         </div>
+//     )
+// }
 
 function convertUsersToArrayOfObject(users) {
     const pos = getUserPositionIndex(users[0])
@@ -75,10 +118,9 @@ function getUser(targetUser, pos) {
             // grade: targetUser[pos.grade],
             // imgSrc: targetUser[pos.imgSrc],
             // wish: targetUser[pos.wish]
-            recipient: targetUser[pos.recipient],
+            name: targetUser[pos.name],
             date: targetUser[pos.date],
             grade: targetUser[pos.grade],
-            major: targetUser[pos.major],
             imgSrc: targetUser[pos.imgSrc],
             wish: targetUser[pos.wish]
         }
@@ -95,11 +137,10 @@ function getUserPositionIndex(user0) {
     // pos.name = pos.Name
     // pos.grade = pos.Grade
     // pos.wish = pos.Wish
-    pos.recipient = pos.Name
-    pos.date = pos.Date
+    pos.name = pos.Name
+    pos.date = pos.Timestamp
     pos.imgSrc = pos.ThumbnailLink
     pos.grade = pos.Grade
-    pos.major = pos.Major
     pos.wish = pos.Wish
     return pos
 }

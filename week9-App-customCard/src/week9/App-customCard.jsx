@@ -8,6 +8,7 @@ import PreviousIcon from '@mui/icons-material/FastRewind';
 import Card from '../components/Card';
 import { IconButton } from '@mui/material';
 import { Postcard } from '../components/PostCard';
+import { Postcard2 } from '../components/Postcard2';
 
 
 export default function App() {
@@ -39,7 +40,8 @@ export default function App() {
         <div className="App">
             <Main>
                  {/* <Card user={user2}/>  */}
-                <Postcard users={users1}/>
+                {/* <Postcard users={users1}/> */}
+                <Postcard2/>
             </Main>
             <NavbarCustom>
                 <IconButton>
